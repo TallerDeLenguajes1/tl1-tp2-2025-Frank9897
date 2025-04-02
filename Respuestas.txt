@@ -1,0 +1,11 @@
+¿Puede ver el archivo tp2_1_2.c?
+NO
+
+¿Por qué?
+Porque estoy parado en la rama Opcion_2
+
+¿Qué diferencias nota?
+Agrega todas las ramas existentes
+
+En VSCode vuelva al “Source Control” vea los cambios, ¿Qué nota?
+Noto que se combinaron las ramas en 1
