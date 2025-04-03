@@ -38,6 +38,7 @@ int main()
     
     listarPCs(pcs,N);
     mostrarMasVieja(pcs,N);
+    mostrarMasVeloz(pcs,N);
     return 0;
 }
 
@@ -78,5 +79,21 @@ void mostrarMasVieja(compu pcs[],int cantidad)
 
 void mostrarMasVeloz(compu pcs[],int cantidad)
 {
+    int i=0,max_velocidad=0,pocision=0;
+    printf("\n****PC mas rapida****");
+    while (i<cantidad)
+    {
+        if (pcs[i].velocidad>max_velocidad)
+        {
+            max_velocidad=pcs[i].velocidad;
+            pocision=i;
+        }
+        i++;
+    }
+    printf("\n Velocidad: %d GHZ",pcs[pocision].velocidad);
+    printf("\n ANIO: %d",pcs[pocision].anio);
+    printf("\n Cantidad de Nucleos: %d",pcs[pocision].cantidad_nucleos);
+    printf("\n CPU: %s",pcs[pocision].tipo_cpu);
+    printf("\n");
     
 }
