@@ -7,17 +7,18 @@
 int main()
 {
     srand(time(NULL));
-    int i,j;
     int mt[N][M];
+    int *pmt = &mt[0][0];
+
     for (int i = 0; i < N; i++)
     {
         for (int j = 0; j < M; j++)
         {
-            mt[i][j]=1+rand()%100;
-            printf("%lf ", mt[i][j]);
-
+            *(pmt + i * M + j) = 1 + rand() % 100;
+            printf("%d ", *(pmt + i * M + j));
         }
-     printf("\n");   
+        printf("\n");   
     }
     
+    return 0;
 }
