@@ -14,6 +14,7 @@ struct compu
 
 void listarPCs(compu pcs[],int cantidad);
 void mostrarMasVieja(compu pcs[],int cantidad);
+void mostrarMasVeloz(compu pcs[],int cantidad);
 
 int main()
 {
@@ -73,4 +74,9 @@ void mostrarMasVieja(compu pcs[],int cantidad)
     printf("\n Cantidad de Nucleos: %d",pcs[pocision].cantidad_nucleos);
     printf("\n CPU: %s",pcs[pocision].tipo_cpu);
     printf("\n");
+}
+
+void mostrarMasVeloz(compu pcs[],int cantidad)
+{
+    
 }
