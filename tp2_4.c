@@ -24,7 +24,7 @@ int main()
     {
             
         int velocidad_aleatoria = 1 + rand() % 3;
-        int anio_aleatorio = 2015 + rand() % (2024-2015) + 1;
+        int anio_aleatorio = 2015 + rand() % (2024-2015 + 1);
         int nucleos_aleatorio = 1 + rand() % 8 ;
         pcs[i].velocidad = velocidad_aleatoria;
         pcs[i].anio = anio_aleatorio;
